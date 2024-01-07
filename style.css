@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--DarkSlateGrey);
+}
+.card{display: flex;flex-direction: column;border-radius: 36px;max-width: 928px;}
+.card-top{width: 100%;height: 100%;background: var(--White);display: flex;flex-direction: column;justify-content: flex-start;}
+.card-top img{width: 100%;object-fit: cover;border-radius: 0 0 2rem 2rem;}
+
+.card-bottom{background: var(--White);padding: 0.5rem;height: 100%;color: var(--DarkSlateGrey);}
+.card-bottom h1{font-size: 3.4rem; font-weight: 700;margin-bottom: 1rem;}
+.card-bottom-info{margin: 1rem 0; gap:1rem; display:  flex; flex-direction: column; justify-content: center;}
+.card-bottom-info-box{display: flex;align-items: center; justify-content: flex-start;gap: 1rem;}
+.card-bottom-info-box p{margin-top: 0.3rem;}
+.card-bottom-signup{margin: 2rem 0;display: flex;flex-direction: column;}
+.card-bottom-signup label{color: var(--DarkSlateGrey);font-size: 12px;font-weight: 700;}
+.card-bottom-signup input{ padding: 1.1rem;margin-top: 0.5rem;border-radius: 0.5rem;border: 1px solid var(--Grey);}
+.card-bottom-signup input:hover{cursor: pointer;}
+.card-bottom-signup button{margin: 1.1rem 0;padding: 1.1rem;font-size: 1rem; background: var(--CharcoalGrey);
+    color: var(--White);font-weight: 700;border-radius: 0.5rem; cursor: pointer;border: none;}
+.card-bottom-signup button:hover{
+    background: linear-gradient(90deg, hsla(305, 87%, 44%, 0.815) 0%, hsl(4, 77%, 56%) 100%);
+}
+.card-bottom-signup-message{display: flex; align-items: center;justify-content: space-between;}
+.card-bottom-signup-message small{margin-right: 1rem;display: none;}
+@media screen and (min-width:800px) {
+    .card{display: flex; flex-direction: row-reverse; justify-content: center;
+    align-items: center;background: var(--White);padding:24px 24px 24px 63px;border-radius: 2rem;}
+    .card-top{flex: 1;}
+    .card-bottom{flex: 1; display: flex; flex-direction: column;justify-content: space-between;}
+    .card-bottom-signup{padding-right: 3rem;}
+    .card-top img{border-radius: 0 0 1rem 1rem;}
+    
+}
+
+.card-success{padding:  48px 39px 40px 64px;display: none; flex-direction: column; 
+    width: 504px; height: 520px;background: var(--White);gap: 1rem; justify-content: center;padding: 0 100px;}
+.card-success img {width: 60px; height: 60px; object-fit: cover;}
+.card-success h1{font-size: 2.4rem; font-weight: 700;line-height: 4.1rem;color: var(--CharcoalGrey);}
+.card-success p{font-size: 0.9rem; font-weight: 400;color: var(--CharcoalGrey);}
+.card-success span{ font-weight: 700;color: var(--DarkSlateGrey);}
+.card-success button{margin: 1rem 0;padding: 1.3rem;font-size: 1rem; background: var(--CharcoalGrey);
+    color: var(--White);font-weight: 700;border-radius: 0.5rem; cursor: pointer;border: none;}
+
+@media screen and (min-width:800px) {
+    .card-success{justify-content: center;margin: 0 auto;border-radius: 2rem;} }
+    .card-success h1{font-size: 3.4rem;margin-top: 2rem;}
+
+.email-validation{color: var(--Tomato);font-weight: 700;}
+
+    
