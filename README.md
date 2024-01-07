@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentorPage](https://robecoding.github.io/frontend-mentor-newsletter-sign-up/)
+- Solution URL: [FrontendMentorPage](https://www.frontendmentor.io/solutions/newsletter-signup-htmlcssjs-HGgWeHvav_)
 - Live Site URL: [GitHubPage Live](https://robecoding.github.io/frontend-mentor-newsletter-sign-up/)
 
 ## My process
